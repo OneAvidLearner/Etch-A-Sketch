@@ -1,0 +1,61 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#container {
+    border: 1px solid rgb(26, 7, 94);
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows),1fr);
+    grid-template-columns: repeat(var(--grid-cols),1fr);
+    width: 500px;
+    height: 500px;
+    justify-self: center;
+    align-self: center;
+ 
+}
+
+.box {
+    border: none; /*1px solid rgb(2, 44, 27);*/
+    
+    background-color: rgb(26, 7, 94);
+
+}
+button {
+    display: flex;
+    font-size: 30px;
+    color: #f9f9f8;
+    width: 120px;
+    height: 60px;
+    border: 3px solid #f9faf8;
+    border-radius: 4px;
+    background-color: rgb(26, 7, 94);
+    border-radius: 8px;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    padding: 3px;
+    
+}
+
+button:click{
+    transform: translateY(4px);
+}
+
+.buttons{
+    display: flex;
+    align-content: center;
+    justify-content: center; 
+}
+
+
+
+
+
+
